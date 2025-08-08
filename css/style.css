@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #352f5b;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 23px;
+}
+
+#SearchInput {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+}
+
+#AddInput {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+}
+
+::placeholder {
+    color: gray !important;
+}
+
+.todos li {
+    background: #423a6f;
+    color: #fff;
+}
+
+.delete {
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/check-list-icon-vector-symbol-600nw-2477440299-removebg-preview.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ToDo List</title>
+</head>
+
+<body>
+
+    <div class="container text-center mt-4">
+        <h1 class="mb-4 text-white">Todo List</h1>
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input oninput="InputSearch()" id="SearchInput" type="search" class="form-control" placeholder="Search todo"
+                aria-label="Username" aria-describedby="basic-addon1">
+        </div> <br>
+        <ul id="list-group" class="list-group todos w-50 mx-auto text-light delete">
+
+
+        </ul> <br>
+        <div class="add text-center my-4">
+            <label class="text-light">Add a new todo...</label>
+            <input id="AddInput" class="form-control m-auto w-50" type="text" name="add" />
+            <br />
+            <div class="text-center">
+                <input onclick="AddTodo()" id="SubmitBtn" type="submit" class="btn btn-light" />
+            </div>
+            <div class="text-center">
+                <input onclick="UpdateAll()" type="submit" value="Update" id="UpdateBtn" class="btn btn-light d-none" />
+            </div>
+        </div>
+        <div id="AlertDiv" class="alert alert-danger w-50 mx-auto d-none" role="alert">
+            Please enter at least 3 characters
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
