@@ -76,6 +76,8 @@ function UpdateAll() {
     localStorage.setItem("notes", JSON.stringify(notes))
     DisplayNotes();
     ClearForm();
+    SubmitBtn.classList.remove('d-none');
+    UpdateBtn.classList.add('d-none')
     console.log(notes);
 }
 var TodoRegex = /^(?!\s)(.{3,})(?<!\s)$/
